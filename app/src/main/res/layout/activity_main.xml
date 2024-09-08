@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_background"
+            android:onClick="Check"/>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to Start a new Game?"
+        android:layout_marginTop="50sp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="#555555"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cNew"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="11dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="9dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#636363"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click me"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/winLine"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:background="@android:color/holo_red_dark"
+        android:visibility="gone"/>
+</LinearLayout>
